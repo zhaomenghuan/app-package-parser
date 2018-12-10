@@ -1,7 +1,7 @@
 {
   "name": "app-package-parser",
   "version": "1.0.0",
-  "description": "",
+  "description": "应用安装包解析工具",
   "main": "index.js",
   "directories": {
     "lib": "lib"
