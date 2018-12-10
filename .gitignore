@@ -1,0 +1,9 @@
+.DS_Store
+node_modules/
+logs/
+run/
+yarn-error.log
+package-lock.json
+yarn.lock
+test/*.apk
+test/*.ipa

@@ -1,0 +1,36 @@
+{
+  "name": "app-package-parser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "node test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhaomenghuan/app-package-parser.git"
+  },
+  "keywords": [
+    "app",
+    "package",
+    "parser",
+    "app-parser",
+    "apk-parser",
+    "ipa-parser"
+  ],
+  "author": "zhaomenghuan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zhaomenghuan/app-package-parser/issues"
+  },
+  "homepage": "https://github.com/zhaomenghuan/app-package-parser#readme",
+  "dependencies": {
+    "bytebuffer": "^5.0.1",
+    "cgbi-to-png": "^1.0.7",
+    "isomorphic-unzip": "^1.1.1",
+    "xmldom": "^0.1.27"
+  }
+}
