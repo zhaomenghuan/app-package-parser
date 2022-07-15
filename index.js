@@ -16,7 +16,7 @@ async function readPkgInfo(filePath, extension) {
     data.versionCode = appInfo.versionCode;
     data.icon = appInfo.icon;
   } else {
-    data.name = appInfo.CFBundleDisplayName;
+    data.name = appInfo.CFBundleDisplayName ? appInfo.CFBundleDisplayName : appInfo.CFBundleName;
     data.appId = appInfo.CFBundleIdentifier;
     data.versionName = appInfo.CFBundleShortVersionString;
     data.versionCode = appInfo.CFBundleVersion;
