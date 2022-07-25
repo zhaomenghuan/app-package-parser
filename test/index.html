@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../index-web.js"></script>
+    <script>
+        async function parserPackage() {
+            const file = document.getElementById('file').files[0]
+            // let ipaReader = new AppPackageParser.IpaReader(file)
+            // let info = await ipaReader.parse()
+            // let apkReader = new AppPackageParser.ApkReader(file)
+            // let info = await apkReader.parse()
+            let info = await AppPackageParser.readPkgInfo(file)
+            console.log(info);
+        }
+        function fileSelect () {
+            parserPackage()
+        }
+    </script>
+</head>
+<body>
+    <input type="file" name="file" id="file" onchange="fileSelect()">
+</body>
+</html>
