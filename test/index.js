@@ -33,19 +33,19 @@ async function writeStreamBufferAsync(path, buffer) {
   })
 }
 
-async function readAPKInfo() {
-  let apkReader = new AppPackageParser.ApkReader(path.resolve(__dirname, "test.apk"));
-  let apkInfo = await apkReader.parse();
-  console.log(apkInfo);
-}
-readAPKInfo();
+// async function readAPKInfo() {
+//   let apkReader = new AppPackageParser.ApkReader(path.resolve(__dirname, "test.apk"));
+//   let apkInfo = await apkReader.parse();
+//   console.log(apkInfo);
+// }
+// readAPKInfo();
 
-async function readIPAInfo() {
-  let ipaReader = new AppPackageParser.IpaReader(path.resolve(__dirname, "test.ipa"));
-  let ipaInfo = await ipaReader.parse();
-  console.log(ipaInfo);
-}
-readIPAInfo();
+// async function readIPAInfo() {
+//   let ipaReader = new AppPackageParser.IpaReader(path.resolve(__dirname, "test.ipa"));
+//   let ipaInfo = await ipaReader.parse();
+//   console.log(ipaInfo);
+// }
+// readIPAInfo();
 
 async function readPkgInfoTest() {
   let ipaInfo = await AppPackageParser.readPkgInfo(path.resolve(__dirname, "test.ipa"));
@@ -53,10 +53,10 @@ async function readPkgInfoTest() {
 }
 readPkgInfoTest();
 
-async function readPkgInfoTest() {
-  let apkInfo = await AppPackageParser.readPkgInfo(path.resolve(__dirname, "test.apk"));
-  console.log(apkInfo);
-  const iconBuffer = await base64ImageToBuffer(apkInfo.icon);
-  await writeStreamBufferAsync(path.resolve(__dirname, `${apkInfo.name}.${iconBuffer.type}`), iconBuffer.data);
-}
-readPkgInfoTest();
+// async function readPkgInfoTest() {
+//   let apkInfo = await AppPackageParser.readPkgInfo(path.resolve(__dirname, "test.apk"));
+//   console.log(apkInfo);
+//   const iconBuffer = await base64ImageToBuffer(apkInfo.icon);
+//   await writeStreamBufferAsync(path.resolve(__dirname, `${apkInfo.name}.${iconBuffer.type}`), iconBuffer.data);
+// }
+// readPkgInfoTest();
