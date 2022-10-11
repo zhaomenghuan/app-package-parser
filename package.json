@@ -7,7 +7,8 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "node test/index.js"
+    "test": "node test/index.js",
+    "dist": "browserify ./index.js -s AppPackageParser > index-web.js"
   },
   "repository": {
     "type": "git",
@@ -32,5 +33,8 @@
     "cgbi-to-png": "^1.0.7",
     "isomorphic-unzip": "^1.1.1",
     "xmldom": "^0.1.27"
+  },
+  "devDependencies": {
+    "browserify": "^17.0.0"
   }
 }
